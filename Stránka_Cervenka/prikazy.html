@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <title>Python Príkazovník</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+  	<div class="container-fluid">
+    	<div class="navbar-header">
+        <a class="navbar-left"><img width="50" height="50" class="img-responsive" src="python.png" alt="Python"></a>
+    	</div>
+    	<ul class="nav navbar-nav">
+      	<li><a href="index.html">Info</a></li>
+      	<li class="active"><a href="#">Python Príkazy</a></li>
+      	<li><a href="prikazytkinter.html">Tkinter Príkazy</a></li>
+      	<li><a href="autorzdroje.html">Zdroje a Autor</a></li>
+    	</ul>
+    	</div>
+	</nav>
+
+<div class="jumbotron text-center">
+  <h1>Python Príkazovník</h1>
+  <p>Základné príkazy v Pythone</p> 
+</div>
+
+<br>
+
+<div class="container">
+	<div class="row">
+    	<div class="col-md-6">
+    		<h4>print('Hello World')</h4>
+        	<p>Vypíše Hello World do shellu.</p>
+    	</div>
+        <div class="col-md-6">
+    		<h4>premenná = hondnota</h4>
+        	<p>Nastaví danej premennej danú hodnotu.</p>
+    	</div>
+    </div>
+	<div class="row">
+    	<div class="col-md-6">
+    		<h4>global premenná</h4>
+        	<p>Označí premennú ako globálnu.</p>
+    	</div>
+        <div class="col-md-6">
+    		<h4>for i in range(počet):</h4>
+        	<p>Vytvori forcyklus, ktorý sa zopakuje daný početkrát.</p>
+    	</div>
+    </div>
+	<div class="row">
+    	<div class="col-md-6">
+    		<h4>def funkcia(parameter1, parameter2):</h4>
+        	<p>Zadefinuje funkciu s dvoma parametrami.</p>
+    	</div>
+        <div class="col-md-6">
+    		<h4>funkcia(parameter1, parameter2)</h4>
+        	<p>Zavolá funkciu s dvoma danými parametrami.</p>
+    	</div>
+    </div>
+	<div class="row">
+    	<div class="col-md-6">
+    		<h4>if podmienka:</h4>
+        	<p>Ak podmienka platí tak sa vykoná.</p>
+    	</div>
+        <div class="col-md-6">
+    		<h4>else:</h4>
+        	<p>Ak sa predošlí if nevykonal tak sa vykoná.</p>
+    	</div>
+    </div>
+	<div class="row">
+    	<div class="col-md-6">
+    		<h4>premenná = input('Zadajte hodnotu: ')</h4>
+        	<p>Nastaví premennú podľa toho aký údaj zadáme ako input do shellu.</p>
+    	</div>
+        <div class="col-md-6">
+    		<h4>ntica = ()</h4>
+        	<p>Vytvori prázdnu nticu.</p>
+    	</div>
+    </div>
+	<div class="row">
+    	<div class="col-md-6">
+    		<h4>zoznam = []</h4>
+        	<p>Vytvori prázdni zoznam.</p>
+    	</div>
+        <div class="col-md-6">
+    		<h4>subor = open('súbor.txt', 'r')</h4>
+        	<p>Otvori súbor na čítanie.</p>
+    	</div>
+    </div>
+	<div class="row">
+    	<div class="col-md-6">
+    		<h4>subor.write(reťazec+'\n')</h4>
+        	<p>Zapíše reťazec a preskočí na ďaľší riadok.</p>
+    	</div>
+        <div class="col-md-6">
+    		<h4>subor.close()</h4>
+        	<p>Zatvori súbor.</p>
+    	</div>
+    </div>
+	<div class="row">
+    	<div class="col-md-6">
+    		<h4>subor.read()</h4>
+        	<p>Prečíta daný súbor.</p>
+    	</div>
+        <div class="col-md-6">
+    		<h4>subor.readline()</h4>
+        	<p>Prečíta riadok v danom súbore.</p>
+    	</div>
+    </div>
+	<div class="row">
+    	<div class="col-md-6">
+    		<h4>slovník = {}</h4>
+        	<p>Vytvori prázdni slovník.</p>
+    	</div>
+        <div class="col-md-6">
+    		<h4>slovník[kľúč] = hodnota</h4>
+        	<p>Prepíše hodnotu slovníka za daným kľúčom.</p>
+    	</div>
+    </div>
+	<div class="row">
+    	<div class="col-md-6">
+    		<h4>from random import *</h4>
+        	<p>Importuje modul random do pythonu.</p>
+    	</div>
+        <div class="col-md-6">
+    		<h4>randint(odkiaľ, pokiaľ)</h4>
+        	<p>Vyberie náhodné číslo.</p>
+    	</div>
+    </div>
+	<div class="row">
+    	<div class="col-md-6">
+    		<h4>randrange(odkiaľ, pokiaľ-1)</h4>
+        	<p>Vyberie náhodné číslo.</p>
+    	</div>
+        <div class="col-md-6">
+    		<h4>choice((prvok1, prvok2, prvok3))</h4>
+        	<p>Náhodne vyberie jeden z prvkou.</p>
+    	</div>
+    </div>
+	<div class="row">
+    	<div class="col-md-6">
+    		<h4>import math</h4>
+        	<p>Importuje do pythonu modul math.</p>
+    	</div>
+        <div class="col-md-6">
+    		<h4>math.sqrt(číslo)</h4>
+        	<p>Umocní dané číslo na druhú.</p>
+    	</div>
+    </div>
+	<div class="row">
+    	<div class="col-md-6">
+    		<h4>math.sin(uhol)</h4>
+        	<p>Vypočíta sínus daného uhlu.</p>
+    	</div>
+        <div class="col-md-6">
+    		<h4>math.cos(uhol)</h4>
+        	<p>Vypočíta cosínus daného uhlu.</p>
+    	</div>
+    </div>
+	<div class="row">
+    	<div class="col-md-6">
+    		<h4>math.radians(uhol_stupne)</h4>
+        	<p>Premení uhol zo stupňou do radiánou.</p>
+    	</div>
+        <div class="col-md-6">
+    		<h4>math.degrees(uhol_radiány)</h4>
+        	<p>Premení uhol z radiánou do stupňou.</p>
+    	</div>
+    </div>
+</div>
+
+</body>
+</html>

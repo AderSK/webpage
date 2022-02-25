@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <title>Python Príkazovník</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+  	<div class="container-fluid">
+    	<div class="navbar-header">
+        <a class="navbar-left"><img width="50" height="50" class="img-responsive" src="python.png" alt="Python"></a>
+    	</div>
+    	<ul class="nav navbar-nav">
+      	<li><a href="index.html">Info</a></li>
+      	<li><a href="prikazy.html">Python Príkazy</a></li>
+      	<li class="active"><a href="#">Tkinter Príkazy</a></li>
+      	<li><a href="autorzdroje.html">Zdroje a Autor</a></li>
+    	</ul>
+    	</div>
+	</nav>
+
+<div class="jumbotron text-center">
+  <h1>Python Príkazovník</h1>
+  <p>Príkazy z modulu tkinter</p> 
+</div>
+
+<br>
+
+<div class="container">
+	<div class="row">
+    	<div class="col-md-6">
+    		<h4>import tkinter</h4>
+        	<p>Importuje modul tkinter do Pythonu.</p>
+    	</div>
+        <div class="col-md-6">
+    		<h4>canvas = tkinter.Canvas(width = šírka, height = výška)</h4>
+        	<p>Nastaví parametre canvasu.</p>
+    	</div>
+    </div>
+	<div class="row">
+    	<div class="col-md-6">
+    		<h4>canvas.pack()</h4>
+        	<p>Vykreslí canvas.</p>
+    	</div>
+        <div class="col-md-6">
+    		<h4>canvas.create_line(x1, y1, x2, y2, ..., width=šírka, fill='farba')</h4>
+        	<p>Nakreslí čiaru z bodu x1, y1 do bodu x2, y2.</p>
+    	</div>
+    </div>
+	<div class="row">
+    	<div class="col-md-6">
+    		<h4>canvas.create_rectangle(x1, y1, x2, y2, fill='farba', outline='farba', width=šírka)</h4>
+        	<p>Nakreslí obdĺžnik medzi bodmi x1, y1 a x2, y2.</p>
+    	</div>
+        <div class="col-md-6">
+    		<h4>canvas.create_oval(x1, y1, x2, y2, fill='farba', outline='farba', width=šírka)</h4>
+        	<p>Nakreslí ovál medzi bodmi x1, y1 a x2, y2.</p>
+    	</div>
+    </div>
+	<div class="row">
+    	<div class="col-md-6">
+    		<h4>canvas.create_text(x, y, text='Text', font='Arial 30', angle=uhol)</h4>
+        	<p>Napíše Text na pozíciu x, y.</p>
+    	</div>
+        <div class="col-md-6">
+    		<h4>canvas.update()</h4>
+        	<p>Obnoví canvas.</p>
+    	</div>
+    </div>
+	<div class="row">
+    	<div class="col-md-6">
+    		<h4>canvas.after(čas, funkcia)</h4>
+        	<p>Po čase v milisekundách zavolá funkciu.</p>
+    	</div>
+        <div class="col-md-6">
+    		<h4>canvas.bind('myš', funkcia)</h4>
+        	<p>Nastaví tlačidlo na myši aby sa daná funkcia po jeho stlačení zavolala.</p>
+    	</div>
+    </div>
+	<div class="row">
+    	<div class="col-md-6">
+    		<h4>canvas.bind_all('kláves', funkcia)</h4>
+        	<p>Nastaví tlačidlo na klávenici aby sa daná funkcia po jeho stlačení zavolala.</p>
+    	</div>
+        <div class="col-md-6">
+    		<h4>canvas.move(značka, x, y)</h4>
+        	<p>Posunie daný predmet o x a y.</p>
+    	</div>
+    </div>
+	<div class="row">
+    	<div class="col-md-6">
+    		<h4>canvas.delete(značka)</h4>
+        	<p>Vymaže daný predmet.</p>
+    	</div>
+        <div class="col-md-6">
+    		<h4>obrazok = tkinter.PhotoImage(file='obrázok.png')</h4>
+        	<p>Nastaví premennú obrazok na fotku obrázok.png.</p>
+    	</div>
+    </div>
+	<div class="row">
+    	<div class="col-md-6">
+    		<h4>canvas.create_image(x, y, image=obrazok)</h4>
+        	<p>Nakreslí obrázok obrazok na pozícii x, y.</p>
+    	</div>
+        <div class="col-md-6">
+    		<h4>farba = obrazok.get(x, y)</h4>
+        	<p>Získa farbu na súradniciach x, y obrázku.</p>
+    	</div>
+    </div>
+	<div class="row">
+    	<div class="col-md-6">
+    		<h4>obrazok/put('farba', (suradnica_x, suradnica_y))</h4>
+        	<p>Nastavý farbu na súradniciach x, y obrázku.</p>
+    	</div>
+    </div>
+</div>
+
+</body>
+</html>
